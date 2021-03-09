@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Tail Wag</h1>
+      {/* <h1>Tail Wag</h1> */}
       <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
       <div className="container mt-5">
         <Switch>
@@ -74,7 +74,7 @@ function App() {
           <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
           <Route exact path="/" component={Welcome} />
           <Route path="/about" component={About} />
-          <Route path='*' component={NoMatch} />
+          <Route path='*' component={NoMatch} /> 
         </Switch>
 
       </div>
