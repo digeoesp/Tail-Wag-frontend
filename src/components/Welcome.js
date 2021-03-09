@@ -7,49 +7,49 @@ import image4 from './../Images/4.jpeg';
 
 const Welcome = () => {
     return (
-        <Carousel>
-            <Carousel.Item interval={1000}>
+        <Carousel pause={false} controls={false}>
+            <Carousel.Item interval={3000}>
                 <img
-                    className="d-block w-100"
+                    className="carouselImage"
                     src={image1}
                     alt="First slide"
                 />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <Carousel.Caption className="carouselCaption">
+                    <h3>“At your service! Samuel is just too proud to be homeless.”</h3>
+                    <br></br>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={500}>
+            <Carousel.Item interval={3000}>
                 <img
-                    className="d-block w-100"
+                    className="carouselImage"
                     src={image2}
                     alt="Second slide"
                 />
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <Carousel.Caption className="carouselCaption">
+                    <h3>''Oliver is always up for kisses & cuddles!''</h3>
+                    <br></br>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={3000}>
                 <img
-                    className="d-block w-100"
+                    className="carouselImage"
                     src={image3}
                     alt="Third slide"
                 />
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <Carousel.Caption className="carouselCaption">
+                    <h3>“Amber loves you already — and you’ve only just met through a picture.”</h3>
+                    <br></br>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={3000}>
                 <img
-                    className="d-block w-100"
+                    className="carouselImage"
                     src={image4}
                     alt="Fourth slide"
                 />
-                <Carousel.Caption>
-                    <h3>Fourth slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <Carousel.Caption className="carouselCaption">
+                    <h3>"I will always be there to brighten up your day!"</h3>
+                    <br></br>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
