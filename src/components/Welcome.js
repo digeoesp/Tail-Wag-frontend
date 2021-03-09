@@ -8,7 +8,7 @@ import image4 from './../Images/4.jpeg';
 const Welcome = () => {
     return (
         <Carousel>
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
                     src={image1}
@@ -19,10 +19,10 @@ const Welcome = () => {
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={500}>
+            <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    src={image2}
+                    src={image3}
                     alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -30,10 +30,10 @@ const Welcome = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
-                    src={image3}
+                    src={image2}
                     alt="Third slide"
                 />
                 <Carousel.Caption>
@@ -41,7 +41,7 @@ const Welcome = () => {
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={2000}>
                 <img
                     className="d-block w-100"
                     src={image4}
