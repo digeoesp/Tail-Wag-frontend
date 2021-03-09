@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Profile from './components/Profile'
 import Welcome from './components/Welcome'
+import NoMatch from './components/NoMatch'
 
 const PrivateRoute = ({ component: Component, ...rest}) => {
   let token = localStorage.getItem('jwtToken');
@@ -58,7 +59,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MERN Authentication</h1>
+      {/* <h1>Tail Wag</h1> */}
       <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
       <div className="container mt-5">
         <Switch>
@@ -73,6 +74,7 @@ function App() {
           <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
           <Route exact path="/" component={Welcome} />
           <Route path="/about" component={About} />
+          <Route path='*' component={NoMatch} /> 
         </Switch>
 
       </div>
