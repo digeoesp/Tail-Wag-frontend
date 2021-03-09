@@ -28,6 +28,7 @@ function App() {
   // Set state values
   const [currentUser, setCurrentUser] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(true);
+  
  
   useEffect(() => {
    let token;
@@ -56,30 +57,36 @@ function App() {
     }
   }
 
-  return (
-    <div className="App">
-      <h1>MERN Authentication</h1>
-      <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
-      <div className="container mt-5">
-        <Switch>
-          <Route path='/signup' component={Signup} />
-          <Route 
-           path="/login"
-           render={(props) => <Login {...props} 
-           nowCurrentUser={nowCurrentUser} 
-           setIsAuthenticated={setIsAuthenticated}
-           user={currentUser} />}
-          />
-          <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
-          <Route exact path="/" component={Welcome} />
-          <Route path="/about" component={About} />
-        </Switch>
+  
 
+  return (
+    
+      <div className="App">
+       
+        <h1>MERN Authentication</h1>
+        <Navbar handleLogout={handleLogout} isAuth={isAuthenticated} />
+        <div className="container mt-5">
+            <Switch>
+              <Route path='/signup' component={Signup} />
+              <Route 
+              path="/login"
+              render={(props) => <Login {...props} 
+              nowCurrentUser={nowCurrentUser} 
+              setIsAuthenticated={setIsAuthenticated}
+              user={currentUser} />}
+              />
+              <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
+              <Route exact path="/" component={Welcome} />
+              <Route path="/about" component={About} />
+            </Switch>
+        </div>
+        <Footer /> 
       </div>
-      <Footer />
-    </div>
+    
   );
 }
+          
+              
 
 export default App;
       
