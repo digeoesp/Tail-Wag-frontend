@@ -73,7 +73,7 @@ function App() {
            setIsAuthenticated={setIsAuthenticated}
            user={currentUser} />}
           />
-          {PetApi}
+          
           <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
           <Route exact path="/" component={Welcome} />
           <Route exact path="/about" component={About} />

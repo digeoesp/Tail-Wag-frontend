@@ -1,5 +1,5 @@
 import React from 'react';
-import PetApi from './PetApi'
+
 
 
 const About = () => {
