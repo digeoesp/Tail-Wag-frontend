@@ -1,4 +1,6 @@
 import React from 'react';
+import PetApi from './PetApi'
+
 
 const About = () => {
     return (
@@ -10,6 +12,7 @@ const About = () => {
                 mollitia deserunt a voluptas assumenda! Consequatur beatae qui 
                 dolorem tempora possimus accusantium, fugit eius quidem?
             </p>
+            
         </div>
     )
 }
