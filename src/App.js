@@ -76,8 +76,10 @@ function App() {
           
           <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
           <Route exact path="/" component={Welcome} />
-          <Route exact path="/about" component={About} />
-          <Route path="/pet" component={PetApi} />
+
+          <Route path="/about" component={About} />
+          <Route path="/pets" component={PetApi} />
+
           <Route path='*' component={NoMatch} /> 
         </Switch>
 
