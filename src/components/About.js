@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const About = () => {
     return (
         <div>
@@ -10,6 +12,7 @@ const About = () => {
                 mollitia deserunt a voluptas assumenda! Consequatur beatae qui 
                 dolorem tempora possimus accusantium, fugit eius quidem?
             </p>
+            
         </div>
     )
 }

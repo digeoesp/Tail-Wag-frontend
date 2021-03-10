@@ -73,10 +73,13 @@ function App() {
            setIsAuthenticated={setIsAuthenticated}
            user={currentUser} />}
           />
+          
           <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
           <Route exact path="/" component={Welcome} />
+
           <Route path="/about" component={About} />
           <Route path="/pets" component={PetApi} />
+
           <Route path='*' component={NoMatch} /> 
         </Switch>
 
@@ -88,5 +91,3 @@ function App() {
 }
 
 export default App;
-      
-      
