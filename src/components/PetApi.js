@@ -21,10 +21,10 @@ function PetApi() {
     const listOfPets = petApi.map((petItem, index)=> {
         return (
             <div key={index}>
-                {petItem.photos[0] ? <img src={petItem.photos[0].medium}/> : <p>no photo</p>}
+                {petItem.photos[0] ? <img src={petItem.photos[0].medium}/> : <img src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615408620/iconfinder_pet-care-health-dog-cat_4929673-1_hbm19y.png"/>}
+                
                 <p>Name: {petItem.name}</p>
                 {/* <img src={petItem.photos.medium} /> */}
-                <p>Type: {petItem.type}</p>
                 <p>Species: {petItem.species}</p>
                 <p>Gender: {petItem.gender}</p>
                 <p>Age: {petItem.age}</p>
