@@ -1,16 +1,20 @@
 import React from 'react';
 import CarouselHomePage from './CrouselHomePage';
+import SearchBar from './SearchBar';
+
 
 const Welcome = () => {
     return (
-        <div>
-            <p>;lkdjg;adfkng;kjdfng;kj</p>
-            <h1>fadgagadfg</h1>
-            <CarouselHomePage />
-        </div>
-
-
-
+        <>
+            <div>
+                <CarouselHomePage />
+            </div>
+            <br></br>
+            <div>
+                <SearchBar />
+            </div>
+            <br></br>
+        </>
     )
 
 }

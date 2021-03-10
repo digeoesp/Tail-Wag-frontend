@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 
+
 // CSS
 import './App.css';
 
@@ -78,6 +79,7 @@ function App() {
         </Switch>
 
       </div>
+
       <Footer />
     </div>
   );
