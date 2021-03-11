@@ -4,9 +4,9 @@ import React from 'react';
 
 const SrchAppAdp = () => {
     return (
-        <div>
+        <div class="container text-center">
             <div>
-                <p>Bring your new best friend home today!</p>
+                <p className="headerSrchAdpt">Bring your new best friend home today!</p>
             </div>
 
             <div class="row">
@@ -17,11 +17,13 @@ const SrchAppAdp = () => {
 
                 <div class="col-sm-6">
                     <p className="srchAdptTxt">Adopt</p>
-                    <p className="description">Adopting has never been easier, than search and apply!</p>
+                    <p className="description">Adopting has never been easier. Just search and apply!</p>
                 </div>
 
             </div>
-
+            <br></br>
+            <br></br>
+            <br></br>
         </div>
     );
 }
