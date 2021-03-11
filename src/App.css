@@ -72,6 +72,13 @@ body {
   text-shadow: 3px 3px 5px gray;
 }
 
+/* Save button in the pets page */
+.saveButton {
+  position:absolute;
+  left: 63px;
+  top:25px;
+}
+
 /* Footer */
 .footer {
   position: absolute;
@@ -82,9 +89,5 @@ body {
   margin-top: auto;
 }
 
-.saveButton {
-  position:absolute;
-  left: 63px;
-  top:25px;
 
-}
+
