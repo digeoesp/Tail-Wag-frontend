@@ -13,6 +13,11 @@ body {
   background-position: center;
 }
 
+.welcomeHeader {
+  text-align: center;
+  text-shadow: 3px 3px 5px gray;
+}
+
 
 .carouselCaption{
   -webkit-text-stroke-width: 1px;
@@ -28,6 +33,7 @@ body {
   margin: 1rem auto;
   display: flex;
   justify-content: center;
+  
 }
 
 /* container box for pets */
@@ -40,6 +46,10 @@ body {
 }
 
 /* Search Adopt section in the homepage */
+.longBox {
+  
+  
+}
 .headerSrchAdpt{
   margin: 2rem auto;
   text-align: center;
