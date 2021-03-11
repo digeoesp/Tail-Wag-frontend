@@ -32,30 +32,30 @@ function PetApi() {
 
     return (
 
-  
-        <Card className="animalCard">            
-        <Fab size="small" color="secondary" aria-label="like" className="saveButton">
-          <FavoriteIcon />
-        </Fab>
-          <CardContent>
-            <div key={index}>
 
-              {petItem.photos[0] ? <img src={petItem.photos[0].medium} /> : <p>no photo</p>}
+      <Card className="animalCard">
+          <Fab onClick="savePet()" value={petItem} size="small" color="secondary" aria-label="like" className="saveButton">
+            <FavoriteIcon />
+          </Fab>
+        <CardContent>
+          <div key={index}>
 
-              <Typography variant="h5"><p className="petName">Name: {petItem.name}</p></Typography>
+            {petItem.photos[0] ? <img src={petItem.photos[0].medium} /> : <p><img src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615408620/iconfinder_pet-care-health-dog-cat_4929673-1_hbm19y.png" /></p>}
 
-              {/* <img src={petItem.photos.medium} /> */}
-              {/* <p>Type: {petItem.type}</p> */}
-              <Typography variant="body2" color="textSecondary" component="p">
-                <p><b>Species:</b> {petItem.species}   <b>Gender:</b> {petItem.gender}   <b>Age:</b> {petItem.age}</p>
-                <p><b>Email:</b> {(petItem.contact[0].email)}</p>
-                <p><b>Phone Number:</b> {(petItem.contact[0].phone)}</p>
-                <p><b>City:</b> {(petItem.contact[0].address.city)}   <b>State:</b> {(petItem.contact[0].address.state)}   <b>Zip Code:</b> {(petItem.contact[0].address.postcode)}</p>
-                <p><b>Country:</b> {(petItem.contact[0].address.country)}</p>
-              </Typography>
-            </div>
-          </CardContent>
-        </Card>
+            <Typography variant="h5"><p className="petName">Name: {petItem.name}</p></Typography>
+
+            {/* <img src={petItem.photos.medium} /> */}
+            {/* <p>Type: {petItem.type}</p> */}
+            <Typography variant="body2" color="textSecondary" component="p">
+              <p><b>Species:</b> {petItem.species}   <b>Gender:</b> {petItem.gender}   <b>Age:</b> {petItem.age}</p>
+              <p><b>Email:</b> {(petItem.contact[0].email)}</p>
+              <p><b>Phone Number:</b> {(petItem.contact[0].phone)}</p>
+              <p><b>City:</b> {(petItem.contact[0].address.city)}   <b>State:</b> {(petItem.contact[0].address.state)}   <b>Zip Code:</b> {(petItem.contact[0].address.postcode)}</p>
+              <p><b>Country:</b> {(petItem.contact[0].address.country)}</p>
+            </Typography>
+          </div>
+        </CardContent>
+      </Card>
 
 
     )
