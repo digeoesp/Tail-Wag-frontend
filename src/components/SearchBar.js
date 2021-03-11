@@ -5,6 +5,7 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 
 
 const SearchBar = () => {
+    
     return (
 <form>
     <Grid container spacing={2}>
