@@ -6,7 +6,7 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 
 const SearchBar = () => {
     return (
-<form>
+<form className="searchBar">
     <Grid container spacing={2}>
         <Grid item xs={4}>
             <TextField label="Zip Code" />

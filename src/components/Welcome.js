@@ -1,6 +1,7 @@
 import React from 'react';
 import CarouselHomePage from './CrouselHomePage';
 import SearchBar from './SearchBar';
+import SrchAppAdp from './SrchAppAdp'
 
 
 const Welcome = () => {
@@ -13,6 +14,12 @@ const Welcome = () => {
             <div>
                 <SearchBar />
             </div>
+            <br></br>
+            <div>
+                <SrchAppAdp />
+            </div>
+            <br></br>
+            <br></br>
             <br></br>
         </>
     )

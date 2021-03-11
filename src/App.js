@@ -78,7 +78,9 @@ function App() {
           <Route exact path="/" component={Welcome} />
 
           <Route path="/about" component={About} />
+
           <Route path="/pets" component={PetApi} />
+
 
           <Route path='*' component={NoMatch} /> 
         </Switch>
