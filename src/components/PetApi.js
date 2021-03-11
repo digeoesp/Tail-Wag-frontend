@@ -24,6 +24,8 @@ function PetApi() {
   }, [])
   const listOfPets = petApi.map((petItem, index) => {
     return (
+
+
       <Card className="animalCard">
         <CardContent>
           <div key={index}>
@@ -40,10 +42,11 @@ function PetApi() {
               <p><b>Country:</b> {(petItem.contact[0].address.country)}</p>
             </Typography>
           </div>
-        </CardContent>
-      </Card>
-    )
+        </CardContent>  
+        </Card>
+    )  
   })
+  
   return (
     <div className="animalCard">
       {listOfPets}

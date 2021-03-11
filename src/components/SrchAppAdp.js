@@ -1,20 +1,21 @@
 import React from 'react';
 
+
+
 const SrchAppAdp = () => {
     return (
-        <div className="allContainers">
-
-            <div className="Heading">
+        <div>
+            <div>
                 <p>Bring your new best friend home today!</p>
             </div>
 
-            <div className="srcAdptContainer">
-                <div className="srchAdpt">
+            <div class="row">
+                <div class="col-sm-6">
                     <p className="srchAdptTxt">Search</p>
                     <p className="description">Search for your new cat or dog best friend near you.</p>
                 </div>
 
-                <div className="srchAdpt">
+                <div class="col-sm-6">
                     <p className="srchAdptTxt">Adopt</p>
                     <p className="description">Adopting has never been easier, than search and apply!</p>
                 </div>

@@ -4,7 +4,6 @@ html {
 }
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
-  
 }
 
 
@@ -25,44 +24,10 @@ body {
 .carouselCaption{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  text-shadow: 3px 3px 5px gray;
 }
 
-/* this is for the search/adopt section in home page */
-.allContainers {
-  height: 30%;
-  width: 100vw;
-}
-.Heading {
-  margin: 2rem auto;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.srcAdptContainer {
-  width: 50%;
-  max-width: 1600px;
-  height: 90%;
-  /* margin: 1rem auto; */
-  display: flex;
-  /* justify-content: center; */
-}
-.srcAdpt {
-  /* height: 100%;
-  width: 25%;
-  margin: 0 auto; */
-}
-.srchAdptTxt{
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-.description {
-  margin-top: 16px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-}
+
 
 /* searchbar settings */
 .searchBar {
