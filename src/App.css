@@ -4,7 +4,6 @@ html {
 }
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
-  
 }
 
 
@@ -13,55 +12,17 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
-  margin-top: auto;
+
+.welcomeHeader {
+  text-align: center;
+  text-shadow: 3px 3px 5px gray;
 }
+
 
 .carouselCaption{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-}
-
-/* this is for the search/adopt section in home page */
-.allContainers {
-  height: 30%;
-  width: 100vw;
-}
-.Heading {
-  margin: 2rem auto;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 500;
-}
-.srcAdptContainer {
-  width: 50%;
-  max-width: 1600px;
-  height: 90%;
-  /* margin: 1rem auto; */
-  display: flex;
-  /* justify-content: center; */
-}
-.srcAdpt {
-  /* height: 100%;
-  width: 25%;
-  margin: 0 auto; */
-}
-.srchAdptTxt{
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-.description {
-  margin-top: 16px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  text-shadow: 3px 3px 5px gray;
 }
 
 /* searchbar settings */
@@ -72,6 +33,7 @@ body {
   margin: 1rem auto;
   display: flex;
   justify-content: center;
+  
 }
 
 /* container box for pets */
@@ -82,3 +44,50 @@ body {
   align-items: flex-start;
   margin-top: 15px;
 }
+
+/* Search Adopt section in the homepage */
+.longBox {
+  
+  
+}
+.headerSrchAdpt{
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 3px 3px 5px gray;
+}
+.srchAdptTxt{
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-shadow: 3px 3px 5px gray;
+}
+.description {
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-shadow: 3px 3px 5px gray;
+}
+
+/* Save button in the pets page */
+.saveButton {
+  position:absolute;
+  left: 63px;
+  top:25px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  margin-top: auto;
+}
+
+
+
