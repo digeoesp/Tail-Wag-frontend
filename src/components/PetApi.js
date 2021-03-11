@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 const { REACT_APP_SERVER_URL } = process.env;
 
 function PetApi() {
+
   // state
   const [petApi, setPetApi] = useState([]);
 
@@ -23,6 +24,7 @@ function PetApi() {
     fetchPetApi();
   }, [])
   const listOfPets = petApi.map((petItem, index) => {
+
     return (
 
 

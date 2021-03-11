@@ -45,7 +45,7 @@ const Login = (props) => {
             <div className="row mt-4">
                 <div className="col-md-7 offset-md-3">
                     <div className="card card-body">
-                    <img class="card-img-top" src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615447098/dogscats_lzldqw.jpg" alt="Card image cap"/>
+                    <img class="card-img-top" src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615447098/dogscats_lzldqw.jpg" alt="Cats and Dogs"/>
                         <h2>Login</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
