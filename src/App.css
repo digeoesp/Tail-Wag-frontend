@@ -72,6 +72,7 @@ body {
   text-shadow: 3px 3px 5px gray;
 }
 
+/* Footer */
 .footer {
   position: absolute;
   bottom: 0;
@@ -79,4 +80,11 @@ body {
   height: 60px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
   margin-top: auto;
+}
+
+.saveButton {
+  position:absolute;
+  left: 63px;
+  top:25px;
+
 }
