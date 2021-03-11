@@ -17,7 +17,7 @@ import Navbar from './components/Navbar'
 import Profile from './components/Profile'
 import Welcome from './components/Welcome'
 import NoMatch from './components/NoMatch'
-// import PetApi from './components/PetApi'
+import PetApi from './components/PetApi'
 
 const PrivateRoute = ({ component: Component, ...rest}) => {
   let token = localStorage.getItem('jwtToken');
@@ -73,10 +73,15 @@ function App() {
            setIsAuthenticated={setIsAuthenticated}
            user={currentUser} />}
           />
+          
           <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
           <Route exact path="/" component={Welcome} />
+
           <Route path="/about" component={About} />
-          {/* <Route path="/pets" component={PetApi} /> */}
+
+          <Route path="/pets" component={PetApi} />
+
+
           <Route path='*' component={NoMatch} /> 
         </Switch>
 
@@ -88,5 +93,3 @@ function App() {
 }
 
 export default App;
-      
-      
