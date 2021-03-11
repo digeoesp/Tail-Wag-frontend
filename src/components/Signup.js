@@ -49,9 +49,9 @@ const Signup = () => {
     return (
         <div style={{ backgroundImage: `url(${cd})` }} className="signupPage">
             <div className="row mt-4">
-                <div className="col-md-7 offset-md-3">
+                <div>
                     <div className="card card-body">
-                        <h2 className="py-2">Signup</h2>
+                        <h2 className="py-2">Signup🐾</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group" >
                                 <label htmlFor="name">name</label>
