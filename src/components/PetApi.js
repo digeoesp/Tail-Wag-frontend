@@ -1,51 +1,72 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import Fab from '@material-ui/core/Fab'
+import FavoriteIcon from '@material-ui/icons/Favorite'
+
 const { REACT_APP_SERVER_URL } = process.env;
 
+
+
 function PetApi() {
-    // state
-    const [petApi, setPetApi] = useState([]);
-  
-    useEffect(() => {
-      const fetchPetApi = async () => {
-        const response = await axios.get(`${REACT_APP_SERVER_URL}/fetch-pets`);
-        const data = response.data;
-        
-        // destructuring
-        console.log(data);
-        setPetApi(data);
-  
-      }
-      fetchPetApi();
-    }, [])
-    const listOfPets = petApi.map((petItem, index)=> {
-        return (
-            <div key={index}>
-                {petItem.photos[0] ? <img src={petItem.photos[0].medium}/> : <img src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615408620/iconfinder_pet-care-health-dog-cat_4929673-1_hbm19y.png"/>}
-                
-                <p>Name: {petItem.name}</p>
-                {/* <img src={petItem.photos.medium} /> */}
-                <p>Species: {petItem.species}</p>
-                <p>Gender: {petItem.gender}</p>
-                <p>Age: {petItem.age}</p>
-                <p>Email: {JSON.stringify(petItem.contact[0].email)}</p>
-                <p>Phone Number: {JSON.stringify(petItem.contact[0].phone)}</p>
-                <p>City: {JSON.stringify(petItem.contact[0].address.city)}</p>
-                <p>State: {JSON.stringify(petItem.contact[0].address.state)}</p>
-                <p>Postcode: {JSON.stringify(petItem.contact[0].address.postcode)}</p>
-                <p>Country: {JSON.stringify(petItem.contact[0].address.country)}</p>
-                
-                <br/>
-            </div>
-        )
-    })
+
+  // state
+  const [petApi, setPetApi] = useState([]);
+
+  useEffect(() => {
+    const fetchPetApi = async () => {
+      const response = await axios.get(`${REACT_APP_SERVER_URL}/fetch-pets`);
+      const data = response.data;
+
+      // destructuring
+      console.log(data);
+      setPetApi(data);
+
+    }
+    fetchPetApi();
+  }, [])
+  const listOfPets = petApi.map((petItem, index) => {
+
+
     return (
-      <div>
-        {listOfPets}
-      </div>
-    );
-  }
+
   
+        <Card className="animalCard">            
+        <Fab size="small" color="secondary" aria-label="like" className="saveButton">
+          <FavoriteIcon />
+        </Fab>
+          <CardContent>
+            <div key={index}>
+
+              {petItem.photos[0] ? <img src={petItem.photos[0].medium} /> : <p>no photo</p>}
+
+              <Typography variant="h5"><p className="petName">Name: {petItem.name}</p></Typography>
+
+              {/* <img src={petItem.photos.medium} /> */}
+              {/* <p>Type: {petItem.type}</p> */}
+              <Typography variant="body2" color="textSecondary" component="p">
+                <p><b>Species:</b> {petItem.species}   <b>Gender:</b> {petItem.gender}   <b>Age:</b> {petItem.age}</p>
+                <p><b>Email:</b> {(petItem.contact[0].email)}</p>
+                <p><b>Phone Number:</b> {(petItem.contact[0].phone)}</p>
+                <p><b>City:</b> {(petItem.contact[0].address.city)}   <b>State:</b> {(petItem.contact[0].address.state)}   <b>Zip Code:</b> {(petItem.contact[0].address.postcode)}</p>
+                <p><b>Country:</b> {(petItem.contact[0].address.country)}</p>
+              </Typography>
+            </div>
+          </CardContent>
+        </Card>
+
+
+    )
+  })
+
+  return (
+    <div className="animalCard">
+      {listOfPets}
+    </div>
+  );
+}
+
 export default PetApi
-    
-               
+
