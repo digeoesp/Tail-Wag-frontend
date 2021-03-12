@@ -6,8 +6,8 @@ const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark">
             <div className="container">
-                <img src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615511245/imageedit_8_4062007254_njnbct.gif" />
-                <Link className="navbar-brand" to="/">Tail Wag!</Link>
+                
+                <Link className="navbar-brand" to="/"><img src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615511245/imageedit_8_4062007254_njnbct.gif" alt="Dog Wagging Tail"/>Tail Wag!</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="#navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
