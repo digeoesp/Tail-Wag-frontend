@@ -24,10 +24,22 @@ body {
 }
 
 
-.carouselCaption{
+.carouselCaption {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   text-shadow: 3px 3px 5px gray;
+}
+
+.pagesText {
+  text-shadow: 3px 3px 5px gray;
+}
+
+.btn {
+  text-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px gray;
+}
+.form-control {
+  box-shadow: 3px 3px 5px gray;
 }
 
 /* searchbar settings */
@@ -38,7 +50,6 @@ body {
   margin: 1rem auto;
   display: flex;
   justify-content: center;
-  
 }
 
 /* container box for pets */
