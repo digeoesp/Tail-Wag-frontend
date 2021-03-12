@@ -8,6 +8,7 @@ body {
 
 .navbar {
   background-color: #4F8EDA;
+  text-shadow: 3px 3px 5px black;
 }
 
 
@@ -95,6 +96,7 @@ body {
 }
 .textFooter {
   color: white;
+  text-shadow: 3px 3px 5px black;
 }
 
 
