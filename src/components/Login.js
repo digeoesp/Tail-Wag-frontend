@@ -45,7 +45,7 @@ const Login = (props) => {
             <div className="row mt-4">
                 <div className="col-md-7 offset-md-3">
                     <div className="card card-body">
-                    <img class="card-img-top" src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615447098/dogscats_lzldqw.jpg" alt="Cats and Dogs"/>
+                        <img class="card-img-top" src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615447098/dogscats_lzldqw.jpg" alt="Cats and Dogs" />
                         <h2 className="pagesText">Login</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
@@ -57,13 +57,20 @@ const Login = (props) => {
                                 <input type="password" name="password" value={password} onChange={handlePassword} className="form-control" />
                             </div>
                             <button type="submit" className="btn btn-primary float-right">Submit</button>
-
                         </form>
                     </div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
             </div>
         </div>
+
     )
+
 }
 
 export default Login;
+

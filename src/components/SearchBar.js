@@ -6,13 +6,13 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 
 const SearchBar = () => {
     return (
-        <div class="container text-center">
+        <div class="searchBar">
             <form className="card card-body" >
-                <Grid container spacing={2}>
-                    <Grid item xs={4}>
+                <Grid container >
+                    <Grid item xs={5}>
                         <TextField label="Zip Code" />
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={1}>
                         <InputLabel>Pet</InputLabel>
                         <NativeSelect>
                             <option value="" />
@@ -20,20 +20,8 @@ const SearchBar = () => {
                             <option>Cat</option>
                         </NativeSelect>
                     </Grid>
-                    <Grid item xs={2}>
-                        <InputLabel>Miles</InputLabel>
-                        <NativeSelect>
-                            <option value="" />
-                            <option>5</option>
-                            <option>10</option>
-                            <option>25</option>
-                            <option>50</option>
-                            <option>100</option>
-                            <option>250</option>
-                        </NativeSelect>
-                    </Grid>
-                    <Grid item xs={2}>
-                        <button type="submit">Search</button>
+                    <Grid item xs={4}>
+                        <button className="searchBtn btn-primary float-right" type="submit">Search</button>
                     </Grid>
                 </Grid>
             </form>

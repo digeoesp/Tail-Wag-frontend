@@ -12,17 +12,11 @@ const Welcome = () => {
                 <div><h1>Welcome to Tail Wag!</h1></div>
                 <div><h4>Where adopting a pet has never been easier</h4></div>
                 <br></br>
-                <div>
                     <CarouselHomePage />
-                </div>
                 <br></br>
-                <div>
-                    <SearchBar />
-                </div>
+                   <SrchAppAdp />
                 <br></br>
-                <div>
-                    <SrchAppAdp />
-                </div>
+                 <SearchBar />
             </div>
             <br></br>
             <br></br>
