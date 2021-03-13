@@ -49,7 +49,7 @@ const About = (props) => {
                   <Fab onClick="savePet()" value={result} size="small" color="secondary" aria-label="like" className="saveButton">
                     <FavoriteIcon />
                   </Fab>
-                <CardContent>
+                <CardContent >
                   <div key={index}>
         
                     {result.photos[0] ? <img src={result.photos[0].medium} /> : <p><img src="https://res.cloudinary.com/dvzw25pxu/image/upload/v1615408620/iconfinder_pet-care-health-dog-cat_4929673-1_hbm19y.png" /></p>}
