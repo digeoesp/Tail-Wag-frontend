@@ -51,22 +51,22 @@ const Signup = () => {
             <div className="row mt-4">
                 <div>
                     <div className="card card-body">
-                        <h2 className="py-2">Signup🐾</h2>
+                        <h2 className="py-2" className="pagesText">Signup🐾</h2>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group" >
-                                <label htmlFor="name">name</label>
+                                <label htmlFor="name" className="pagesText">Name</label>
                                 <input type="text" name="name" value={name} onChange={handleName} className="form-control" />
                             </div>
                             <div className="form-group" >
-                                <label htmlFor="email">email</label>
+                                <label htmlFor="email" className="pagesText">E-mail</label>
                                 <input type="text" name="email" value={email} onChange={handleEmail} className="form-control" />
                             </div>
                             <div className="form-group" >
-                                <label htmlFor="password">password</label>
+                                <label htmlFor="password" className="pagesText">Password</label>
                                 <input type="text" name="password" value={password} onChange={handlePassword} className="form-control" />
                             </div>
                             <div className="form-group" >
-                                <label htmlFor="confirmPassword">confirm password</label>
+                                <label htmlFor="confirmPassword" className="pagesText">Confirm Password</label>
                                 <input type="text" name="confirPassword" value={confirmPassword} onChange={handleConfirmPassword} className="form-control" />
                             </div>
                             <button type="submit" className="btn btn-primary float-right">Submit</button>
@@ -75,6 +75,7 @@ const Signup = () => {
                 </div>
             </div>
         </div>
+   
     )
 }
 

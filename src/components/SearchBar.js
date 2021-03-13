@@ -41,23 +41,27 @@ const SearchBar = () => {
     }
 
     return (
+
         <div class="container text-center">
            
             <form onSubmit={ handleSubmit } className="card card-body" >
                 <Grid container spacing={2}>
                     <Grid item xs={4}>
                         <TextField onChange={(e) => handleChangeZip(e)}label="Zip Code" />
+
                     </Grid>
-                    <Grid item xs={2}>
+                    <Grid item xs={1}>
                         <InputLabel>Pet</InputLabel>
                         <select onChange= { (e) => handleChange(e)}>
                             <option value="" />
                             <option>Dog</option>
                             <option>Cat</option>
+
                         </select>
                     </Grid>
                     <Grid item xs={2}>
                         <button type="submit">Search</button>
+
                     </Grid>
                 </Grid>
             </form>
