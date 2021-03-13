@@ -18,6 +18,7 @@ import Profile from './components/Profile'
 import Welcome from './components/Welcome'
 import NoMatch from './components/NoMatch'
 import PetApi from './components/PetApi'
+import SearchBar from './components/SearchBar'
 
 const PrivateRoute = ({ component: Component, ...rest}) => {
   let token = localStorage.getItem('jwtToken');
