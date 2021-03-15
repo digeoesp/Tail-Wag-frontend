@@ -59,11 +59,11 @@ const Signup = () => {
                             </div>
                             <div className="form-group" >
                                 <label htmlFor="email" className="pagesText">E-mail</label>
-                                <input type="text" name="email" value={email} onChange={handleEmail} className="form-control" />
+                                <input type="email" name="email" value={email} onChange={handleEmail} className="form-control" />
                             </div>
                             <div className="form-group" >
                                 <label htmlFor="password" className="pagesText">Password</label>
-                                <input type="text" name="password" value={password} onChange={handlePassword} className="form-control" />
+                                <input type="password" name="password" value={password} onChange={handlePassword} className="form-control" />
                             </div>
                             <div className="form-group" >
                                 <label htmlFor="confirmPassword" className="pagesText">Confirm Password</label>

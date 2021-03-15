@@ -35,11 +35,11 @@ function PetApi() {
         console.log(response);
       })
   }
-  const listOfPets = petApi.map((petItem, index) => {
+  const listOfPets = petApi.map((petItem, index) => { console.log("🌻 ", petItem )
     return (
       <Card className="animalCard">
-        <Fab onClick={() =>
-          handleFavorite(petItem.id)} value={petItem} size="small" color="secondary" aria-label="like" className="saveButton">
+        <Fab onClick={() => 
+          handleFavorite(petItem._id)} value={petItem} size="small" color="secondary" aria-label="like" className="saveButton">
           <FavoriteIcon />
         </Fab>
         <CardContent>
