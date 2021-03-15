@@ -27,16 +27,21 @@ function PetApi() {
     }
     fetchPetApi();
   }, [])
+  const handleFavorite = async (id) => {
+    await axios.post(`${REACT_APP_SERVER_URL}/users/save`, {
+      id
+    })
+      .then(function (response) {
+        console.log(response);
+      })
+  }
   const listOfPets = petApi.map((petItem, index) => {
-
-
     return (
-
-
       <Card className="animalCard">
-          <Fab onClick="" value={petItem} size="small" color="secondary" aria-label="like" className="saveButton">
-            <FavoriteIcon />
-          </Fab>
+        <Fab onClick={() =>
+          handleFavorite(petItem.id)} value={petItem} size="small" color="secondary" aria-label="like" className="saveButton">
+          <FavoriteIcon />
+        </Fab>
         <CardContent>
           <div key={index}>
 
@@ -58,7 +63,7 @@ function PetApi() {
       </Card>
     )
   })
-  
+
   return (
     <div>
       {listOfPets}
