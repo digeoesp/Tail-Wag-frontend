@@ -60,7 +60,7 @@ function PetApi() {
   })
   
   return (
-    <div className="animalCard">
+    <div>
       {listOfPets}
     </div>
   );
