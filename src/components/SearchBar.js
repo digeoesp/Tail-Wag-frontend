@@ -41,16 +41,16 @@ const SearchBar = () => {
     }
 
     return (
-
+<div className="searchBarAll">
         <div class="container text-center">
            
             <form onSubmit={ handleSubmit } className="card card-body" >
-                <Grid container spacing={2}>
+                <Grid container spacing={3}>
                     <Grid item xs={4}>
                         <TextField onChange={(e) => handleChangeZip(e)}label="Zip Code" />
 
                     </Grid>
-                    <Grid item xs={1}>
+                    <Grid item xs={3}>
                         <InputLabel>Pet</InputLabel>
                         <select onChange= { (e) => handleChange(e)}>
                             <option value="" />
@@ -59,13 +59,13 @@ const SearchBar = () => {
 
                         </select>
                     </Grid>
-                    <Grid item xs={2}>
-                        <button type="submit">Search</button>
+                    <Grid item xs={3}>
+                        <button type="submit" className="btn btn-primary float-right">Search</button>
 
                     </Grid>
                 </Grid>
             </form>
-            
+            </div>
         </div>
     )
 }
