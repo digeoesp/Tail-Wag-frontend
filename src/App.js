@@ -34,11 +34,11 @@ function App() {
   // Set state values
   
   const [currentUser, setCurrentUser] = useState('');
-
   const [isAuthenticated, setIsAuthenticated] = useState(true);
  
   useEffect(() => {
-   let token;
+   
+    let token;
    
    if(!localStorage.getItem('jwtToken')) {
      setIsAuthenticated(false);
