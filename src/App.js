@@ -33,6 +33,7 @@ function App() {
   console.log(REACT_APP_SERVER_URL)
   // Set state values
   const [currentUser, setCurrentUser] = useState('');
+  
   const [isAuthenticated, setIsAuthenticated] = useState(true);
  
   useEffect(() => {
